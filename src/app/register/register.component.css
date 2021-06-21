@@ -1,0 +1,27 @@
+section{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: block;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+
+
+}
+img.displayed{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 15px;
+}
+
+a{
+    width: 100px;
+    cursor:ponter;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}

@@ -1,0 +1,26 @@
+.container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+}
+.nav{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+nav ul li a{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 15px;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+nav ul li a:hover{
+    color:#6c757d;
+}
