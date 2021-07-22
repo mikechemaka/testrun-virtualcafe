@@ -12,6 +12,12 @@ import { ClassesComponent } from './classes/classes.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
+import { NoticesComponent } from './notices/notices.component';
+import { LogoutComponent } from './logout/logout.component';
+import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { MyprofileComponent } from './myprofile/myprofile.component';
+import { QuizComponent } from './quiz/quiz.component';
+import { ChatComponent } from './chat/chat.component';
 
 @NgModule({
   declarations: [
@@ -21,14 +27,21 @@ import { FormsModule } from '@angular/forms';
     RegisterComponent,
     HomeComponent,
     ClassesComponent,
-    NavbarComponent
+    NavbarComponent,
+    NoticesComponent,
+    LogoutComponent,
+    MyprofileComponent,
+    QuizComponent,
+    ChatComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
     NgbModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,170 @@
+.breadcrumbs-section{
+    background-color:#99b9e9; 
+ }
+ .homecards-section{
+   overflow: hidden;
+   
+ }
+
+
+.homecards-section .card-body{
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+  height: 100%;
+  padding-top: 45px;
+  padding-right: 25px;
+  padding-bottom: 45px;
+  padding-left: 25px;
+  border-radius: 8px;
+
+  
+}
+
+.homecards-section .card-body h4{
+  margin-top: 13px;
+  font-weight: 700;
+}
+
+.homecards-section .card-body .view-more{
+  display: inline-flex;
+  align-items: center;
+  justify-content: start;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 8px 20px;
+  text-decoration: none;
+}
+.homecards-section .card-body.green img{
+  background-color:#5cb85c;
+ color: #08da4e;
+ border-radius: 4px;
+ position: relative;
+ display: inline-block;
+}
+
+.homecards-section .card-body.green{
+  border-bottom: 3px solid #5cb85c;
+}
+
+.homecards-section .card-body.green:hover{
+  background: #5cb85c;
+  color:#fff;  
+}
+.homecards-section .card-body.green img{
+  background-color:#fff;
+ border-radius: 4px;
+ position: relative;
+ display: inline-block;
+}
+.homecards-section .card-body.green .view-more{
+  color: #08da4e;
+}
+
+.homecards-section .card-body.green .icon{
+  color: #08da4e;
+    background: #cffddf;
+}
+
+.homecards-section .card-body.orange{
+  border-bottom: 3px solid #f0ad4e;
+}
+
+.homecards-section .card-body.orange:hover{
+  background: #f0ad4e;
+  color:#fff;  
+}
+.homecards-section .card-body.orange img{
+  background-color:#fff;
+ border-radius: 4px;
+ position: relative;
+ display: inline-block;
+}
+
+.homecards-section .card-body.orange .view-more{
+  color: #f0ad4e;
+}
+
+.homecards-section .card-body.blue{
+  border-bottom: 3px solid #0275d8;
+}
+
+
+.homecards-section .card-body.blue:hover{
+  background: #0275d8;
+  color:#fff;  
+}
+.homecards-section .card-body.blue img{
+  background-color:#fff;
+ border-radius: 4px;
+ position: relative;
+ display: inline-block;
+}
+
+.homecards-section .card-body.purple{
+  border-bottom: 3px solid #b50edf;
+}
+
+.homecards-section .card-body.purple:hover{
+  background: #b50edf;
+  color:#fff;  
+}
+.homecards-section .card-body.purple img{
+  background-color:#fff;
+ border-radius: 4px;
+ position: relative;
+ display: inline-block;
+}
+
+.homecards-section .card-body.purple .view-more{
+  color:#b50edf ;
+}
+
+.homecards-section .card-body.red{
+  border-bottom: 3px solid #e9222c;
+}
+
+.homecards-section .card-body.red:hover{
+  background: #e9222c;
+  color:#fff; 
+}
+.homecards-section .card-body.red img{
+  background-color:#fff;
+ border-radius: 4px;
+ position: relative;
+ display: inline-block;
+}
+.homecards-section .card-body.red .view-more{
+  color:  #e9222c;
+}
+
+
+.homecards-section .card-body.pink{
+  border-bottom: 3px solid #f51f9c ;
+}
+
+.homecards-section .card-body.pink:hover{
+  background: #f51f9c;
+  color:#fff;
+}
+.homecards-section .card-body.pink img{
+  background-color: #fff;
+ border-radius: 4px;
+ position: relative;
+ display: inline-block;
+}
+
+.homecards-section .card-body.pink .view-more{
+  color:  #f51f9c;
+}
+
+.homecards-section .card-body:hover .view-more{
+  color: #fff;
+}
+
+a.hover{
+  text-decoration: none;
+  text-decoration-line: none;
+  text-decoration-style: initial;
+  text-decoration-color: initial
+}
+
+

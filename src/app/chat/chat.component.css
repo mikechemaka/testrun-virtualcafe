@@ -1,0 +1,169 @@
+.breadcrumbs-section{
+    background-color:#99b9e9; 
+ }
+
+.card {
+    box-shadow: 0 0 1px rgba(0,0,0,.125), 0 1px 3px rgba(0,0,0,.2);
+    /*margin-bottom: 1rem;*/
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+.card-header {
+    background-color: transparent;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    padding: .75rem 1.25rem;
+    position: relative;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    margin-bottom: 0;
+    background-color: rgba(0,0,0,.03);
+}
+
+.card-title {
+    float: left;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin: 0;
+}
+.card-header .card-tools {
+    float: right;
+    margin-right: 74px;
+}
+.card-title {
+    float: left;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin: 0;
+}
+.badge-primary {
+    color: #fff;
+    background-color: #007bff;
+}
+.badge {
+    display: inline-block;
+    padding: .25em .4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+
+}
+.direct-chat .card-body {
+    overflow-x: hidden;
+    padding: 0;
+    position: relative;
+}
+.card-body {
+
+    flex: 1 1 auto;
+    min-height: 1px;
+
+}
+
+
+.direct-chat-messages {
+    transform: translate(1,0);
+    height: 550px;
+    overflow: auto;
+    padding: 10px;
+}
+.direct-chat-msg, .direct-chat-text {
+    display: block;
+}
+.direct-chat-infos {
+    display: block;
+    font-size: .875rem;
+    margin-bottom: 2px;
+}
+.direct-chat-name {
+    font-weight: 600;
+}
+.float-left {
+    float: left!important;
+}
+.direct-chat-timestamp {
+    color: #697582;
+}
+.float-right {
+    float: right!important;
+}
+.direct-chat-img {
+    border-radius: 50%;
+    float: left;
+    height: 40px;
+    width: 40px;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+.direct-chat-text {
+    border-radius: .3rem;
+    background-color: #d2d6de;
+    border: 1px solid #d2d6de;
+    color: #444;
+    margin: 5px 0 0 50px;
+    padding: 15px 20px;
+    position: relative;
+}
+.direct-chat-msg, .direct-chat-text {
+    display: block;
+}
+.direct-chat-msg {
+    margin-bottom: 50px;
+}
+.direct-chat-msg, .direct-chat-text {
+    display: block;
+}
+.direct-chat-infos {
+    display: block;
+    font-size: .875rem;
+    margin-bottom: 2px;
+}
+
+
+.right .direct-chat-img {
+    float: right;
+}
+.direct-chat-img {
+    border-radius: 50%;
+    float: left;
+    height: 40px;
+    width: 40px;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+.direct-chat-msg.right .direct-chat-text {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+}
+.right .direct-chat-text {
+    margin-left: 0;
+    margin-right: 50px;
+}
+.card-footer {
+    
+    padding: .75rem 1.25rem;
+    background-color: rgba(0,0,0,.03);
+    border-top: 0 solid rgba(0,0,0,.125);
+}
+.input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+
+}

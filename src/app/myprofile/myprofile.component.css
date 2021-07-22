@@ -1,0 +1,92 @@
+
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+.breadcrumbs-section{
+    background-color:#99b9e9; 
+ }
+ .float-sm-right {
+    float: right!important;
+}
+
+.card-widget {
+    border: 0;
+    position: relative;
+}
+.widget-user-2 .widget-user-header {
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    padding: 1rem;
+}
+
+
+.widget-user-2 .widget-user-image img {
+    float: left;
+    height: auto;
+    width: 65px;
+}
+.elevation-2 {
+    box-shadow: 0 3px 6px rgba(0,0,0,.16),0 3px 6px rgba(0,0,0,.23)!important;
+}
+.img-circle {
+    border-radius: 50%;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+.widget-user-2 .widget-user-desc, .widget-user-2 .widget-user-username {
+    margin-left: 75px;
+}
+.widget-user-header .widget-user-username {
+    font-size: 25px;
+    font-weight: 300;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.p-0 {
+    padding: 0!important;
+}
+.card-footer {
+
+    background-color: rgba(0,0,0,.03);
+    border-top: 0 solid rgba(0,0,0,.125);
+}
+.btn-block {
+    display: block;
+    width: 100%;
+    padding: .7rem 1rem;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    box-shadow: none;
+}
+.flex-column {
+
+    flex-direction: column!important;
+}
+.nav {
+    display: flex;
+    display: flex;
+    padding-left: 0;
+    margin-bottom: 0;
+    
+}
+.card .nav.flex-column li {
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    margin: 0;
+}
+.nav-item {
+    display: block;
+    padding: .7rem 1rem;
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+.float-right {
+    float: right!important;
+}

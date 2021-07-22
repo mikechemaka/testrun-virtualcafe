@@ -1,4 +1,4 @@
-.container-fluid{
+.container{
     padding-left: 0;
     padding-right: 0;
 }
@@ -10,6 +10,32 @@
     justify-content: space-between;
 
 }
+
+.navbar-dark .navbar-brand {
+    color: #fff;
+}
+.navbar-brand {
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.55rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+
+
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+}
+.navbar-nav {
+    display: flex;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
 nav ul li a{
     font-size: 1.1rem;
     font-weight: 600;
@@ -19,8 +45,16 @@ nav ul li a{
     justify-content: space-between;
     padding: 0px 15px;
     white-space: nowrap;
-    transition: 0.3s;
+    
 }
 nav ul li a:hover{
     color:#6c757d;
+}
+
+ .ms-auto {
+    margin-left: auto!important;
+}
+.nav-link {
+    display: block;
+    padding: .5rem 1rem;
 }

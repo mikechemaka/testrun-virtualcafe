@@ -1,3 +1,99 @@
 .breadcrumbs-section{
     background-color:#99b9e9; 
  }
+
+ .classes-section{
+    overflow: hidden;
+    display: block;
+}
+.container.order{
+    margin-top: 30px;
+}
+.classes-section .card-body{
+    height: 100%;
+    padding: 30px 20px;
+    background: #fff;
+    text-align: center;
+    box-shadow: 0 0 30px 0 rgba(68, 88, 114, 0.12);
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.classes-section .electives{
+    width: 200px;
+    position: absolute;
+    top: 18px;
+    right: -68px;
+    transform: rotate(45deg);
+    z-index: 1;
+    font-size: 14px;
+    padding: 1px 0 3px 0;
+    background: #4154f1;
+    color: #fff;
+}
+ .classes-section img {
+     padding: 5px 10px;
+     overflow: hidden;
+     transition: transform .5s ease;
+ }
+
+ 
+    
+ .classes-section .img-fluid{
+    height: 150px;   
+
+ }
+ .classes-section ul{
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    line-height: 26px;
+    font-size: 16px;
+    margin-bottom: 25px;
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 19px;
+    
+}
+
+.classes-section .card-body.one{
+    transition: transform .5s ease;
+    margin:0 auto;
+
+}
+.classes-section .card-body.one:hover{
+    transform: scale(1.2);
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease-in-out 0s;
+    
+}
+ 
+.classes-section .card-body.two{
+    transition: transform .5s ease;
+    margin:0 auto;
+}
+
+.classes-section .card-body.two:hover{
+    transform: scale(1.2);
+}
+
+.classes-section .card-body.three{
+    transition: transform .5s ease;
+    margin:0 auto;
+}
+.classes-section .card-body.three:hover{
+    transform: scale(1.2);
+}
+
+.classes-section .card-body.four{
+    transition: transform .5s ease;
+    margin:0 auto;
+}
+.classes-section .card-body.four:hover{
+    transform: scale(1.2);
+}
