@@ -11,6 +11,7 @@ import { LogoutComponent } from './logout/logout.component';
 import { MyprofileComponent } from './myprofile/myprofile.component';
 import { QuizComponent } from './quiz/quiz.component';
 import { ChatComponent } from './chat/chat.component';
+import { ResetpwComponent } from './resetpw/resetpw.component';
 
 
 const routes: Routes = [
@@ -25,7 +26,8 @@ const routes: Routes = [
   {path: "logout", component:LogoutComponent},
   {path: "myprofile", component:MyprofileComponent},
   {path: "quiz", component:QuizComponent},
-  {path: "chat", component:ChatComponent,}
+  {path: "chat", component:ChatComponent},
+  {path: "resetpw", component:ResetpwComponent,}
 
 ]
 

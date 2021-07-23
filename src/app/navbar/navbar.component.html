@@ -1,20 +1,17 @@
 <header>
-    <nav class= "navbar navbar-dark navbar-expand-lg" style= "background:#0d6efd;">
+  <nav class= "navbar navbar-dark navbar-expand-lg" style= "background:#0d6efd;">
+  
         
     <div   class= "container">
             <a class= "navbar-brand" href= "#"> smartlearn</a>
           
-            <button type= "button" class= "navbar-toggler collapsed " data-bs-toggle= "collapse"  data-bs-target= "#navbarResponsive"
-             aria-controls= "navbarResponsive" aria-expanded="false" aria-label= "Toggle navigation">
-            <span 
-            class="navbar-toggler-icon"
-          
-            ></span>
+            <button type= "button" class= "navbar-toggler" data-toggle= "collapse"  data-target= "#navbarResponsive"
+             aria-controls= "navbarResponsive" aria-label= "Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
             </button>
-        
-
-            <div class= "navbar-collapse collapse show " id= "navbarResponsive">
-                <form class= " mx-auto col-lg-5">
+            
+            <div class= "collapse navbar-collapse" id= "navbarResponsive" style>
+                <form class= " mx-auto col-lg-5 mt-2">
                   
                    <div class= "input-group ">
                         <input type= "text" class= "form-control" placeholder="Search" aria-label="search">
@@ -24,7 +21,7 @@
                     </div>
                    
                 </form>
-               <ul class= "navbar-nav ms-auto">
+               <ul class= "navbar-nav ms-auto mt-2 mt-lg-0">
                     <li class= "nav-item active">
                      <a class= "nav-link" href= "#" routerLink= "/home">Home</a>
                     </li>

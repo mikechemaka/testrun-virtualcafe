@@ -62,24 +62,26 @@ a {
 }
 
 .classes-section .card-body.one{
-    transition: transform .5s ease;
-    margin:0 auto;
-
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    transition: all 2s ease;
 }
 .classes-section .card-body.one:hover{
-    transform: scale(1.2);
-    box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
-    transition: all 0.5s ease-in-out 0s;
-    
+    transform: scale(1.2); 
 }
  
 .classes-section .card-body.two{
-    transition: transform .5s ease;
-    margin:0 auto;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+
 }
 
 .classes-section .card-body.two:hover{
     transform: scale(1.2);
+    
 }
 
 .classes-section .card-body.three{

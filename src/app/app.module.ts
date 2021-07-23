@@ -18,6 +18,7 @@ import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MyprofileComponent } from './myprofile/myprofile.component';
 import { QuizComponent } from './quiz/quiz.component';
 import { ChatComponent } from './chat/chat.component';
+import { ResetpwComponent } from './resetpw/resetpw.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { ChatComponent } from './chat/chat.component';
     LogoutComponent,
     MyprofileComponent,
     QuizComponent,
-    ChatComponent
+    ChatComponent,
+    ResetpwComponent
   ],
   imports: [
     BrowserModule,

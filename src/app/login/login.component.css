@@ -11,6 +11,28 @@ section{
 
 
 }
+.landpage-left{
+    padding: 1rem!important;
+}
+.landpage-right{
+    padding: 1rem!important;
+}
+.header-color{
+    color:#858796!important;
+}
+.h4 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+form.loginform .form-control-user {
+    font-size: .9rem;
+    padding: .8rem 1rem;
+}
+form.loginform .btn-user {
+    font-size: 1rem;
+    padding: .8rem 1rem;
+}
 img.displayed{
     display: block;
     margin-left: auto;
@@ -22,7 +44,61 @@ a{
     width: 100px;
     cursor:ponter;
     text-decoration: none;
+    background-color: transparent;
 }
 a:hover{
     text-decoration: underline;
+}
+.small {
+    font-size: 80%;
+    font-weight: 400;
+}
+r {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+
+
+
+
+
+
+
+
+.float-sm-right {
+    float: right!important;
+}
+.copyright {
+    margin-top: 70px;
+    padding: 5px 0px;
+    background-color: #007bff;
+}
+.copyright h1 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    float: left;
+}
+
+.copyright h1:hover{
+    color: #012970
+}
+ul{
+    float: right;
+}
+ul li{
+    float: right;
+    list-style: none;
+}
+ul li a{
+    color: #fff;
+    margin-right: 20px;
+    font-size:27px;
+    text-align: center;
+}
+ul li a:hover{
+    color: #012970
 }

@@ -5,27 +5,6 @@
 .landpage-right{
     padding: 1rem!important;
 }
-.header-color{
-    color:#858796!important;
-}
-.h4 {
-    font-size: 1.5rem;
-    font-weight: 400;
-}
-form.loginform .btn-user {
-    font-size: 1rem;
-    padding: .8rem 1rem;
-}
-.btn-block {
-    display: block;
-    width: 100%;
-}
-
-form.loginform .form-control-user {
-    font-size: .9rem;
-    padding: .8rem 1rem;
-}
-
 img.displayed{
     display: block;
     margin-left: auto;
@@ -33,10 +12,33 @@ img.displayed{
     padding-bottom: 15px;
 }
 
+.header-color{
+    color:#858796!important;
+}
+.h4 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.mb-4{
+    margin-bottom: 1.5rem!important;
+}
+p {
+    margin-top: 0;
+    color:#858796!important;
+}
+form.loginform .form-control-user {
+    font-size: .9rem;
+    padding: .8rem 1rem;
+}
+form.loginform .btn-user {
+    font-size: 1rem;
+    padding: .8rem 1rem;
+}
 a{
     width: 100px;
     cursor:ponter;
     text-decoration: none;
+    background-color: transparent;
 }
 a:hover{
     text-decoration: underline;
@@ -45,13 +47,11 @@ a:hover{
 
 
 
-
-
 .float-sm-right {
     float: right!important;
 }
 .copyright {
-    margin-top: 15px;
+    margin-top: 70px;
     padding: 5px 0px;
     background-color: #007bff;
 }
@@ -82,3 +82,5 @@ ul li a{
 ul li a:hover{
     color: #012970
 }
+
+

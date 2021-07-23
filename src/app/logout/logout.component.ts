@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { faUser } from '@fortawesome/free-solid-svg-icons';
+import { faFacebook, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope, faUser } from '@fortawesome/free-solid-svg-icons';
 
 import { faUserCircle } from '@fortawesome/free-solid-svg-icons';
 
@@ -31,6 +32,10 @@ faUserMd=faUserMd
 faSignInAlt= faSignInAlt
 faSignOutAlt= faSignOutAlt
 faChartArea= faChartArea
+faFacebook = faFacebook
+faEnvelope = faEnvelope
+faLinkedin= faLinkedin
+faWhatsapp= faWhatsapp
 
 
   constructor() { }
