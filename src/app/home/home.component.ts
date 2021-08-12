@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { faUserCircle } from '@fortawesome/free-solid-svg-icons';
+import { faFacebook, faInstagram, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import {  faChevronRight, faGraduationCap, faLocationArrow, faTrash, faUserCircle } from '@fortawesome/free-solid-svg-icons';
 import { faBookOpen } from '@fortawesome/free-solid-svg-icons';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 @Component({
@@ -11,10 +12,22 @@ export class HomeComponent implements OnInit {
   
 faUserCircle = faUserCircle 
 faBookOpen= faBookOpen
-faArrowRight= faArrowRight;
+faArrowRight= faArrowRight
+faTrash= faTrash
+faLocationArrow=faLocationArrow
+faGraduationCap=faGraduationCap
+faWhatsapp= faWhatsapp
+faFacebook=faFacebook
+faInstagram=faInstagram
+faLinkedin=faLinkedin
+faChvronRight=faChevronRight
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+
 }
+
+

@@ -9,14 +9,16 @@
                 <p class="mb-3">Enter your email address below <br>and we'll send a link to reset your password!</p>
              </div>
 
-             <form class= "loginform">
+             <form class= "loginform needs-validation">
               <div class= "form-group p-2">
                 <input type="text" name= "email" id= "email" class= "form-control form-control-user" placeholder= "Enter Your Email Address" required= "required">
+                <div class="valid-feedback">Valid Email.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
               </div>
              
               
               <div class= "form-group p-2">
-                <button type="submit" style="width: 100%;"  class= "btn btn-primary btn-user" >
+                <button type="submit" (click)='validate()'     style="width: 100%;"  class= "btn btn-primary btn-user" >
                   <span>Login</span>
                 </button>
               </div> 
@@ -43,7 +45,11 @@
     <div class="container">
        <div class="row">
         <div class="col-md-6 col-sm-6 left">
-          <h1>smartlearn</h1>
+          <h1>smartlearn
+             <span>
+               <fa-icon [icon]="faGraduationCap"></fa-icon>
+            </span>
+        </h1>
         </div>
         <div class="col-md-6 col-sm-6 right">
           <div class="breadcrumb float-sm-right">

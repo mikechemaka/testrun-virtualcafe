@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-landing',
   templateUrl: './landing.component.html',
@@ -7,6 +7,7 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 })
 export class LandingComponent implements OnInit {
   faArrowRight= faArrowRight;
+  faGraduationCap=faGraduationCap
   constructor() { }
 
   ngOnInit(): void {

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faComment, faMinus, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
+import { faComment, faGraduationCap, faMinus, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-chat',
   templateUrl: './chat.component.html',
@@ -9,7 +9,7 @@ export class ChatComponent implements OnInit {
  faMinus= faMinus
  faComment= faComment
  faPaperPlane= faPaperPlane
-
+ faGraduationCap=faGraduationCap
   constructor() { }
 
   ngOnInit(): void {

@@ -1,0 +1,130 @@
+<app-navbar></app-navbar>
+<section class= "breadcrumbs"> 
+  <div class="container">
+
+    <ol>
+      <li><a href="#" routerLink="/home" style="text-decoration: none;">Home</a></li>
+      <li><a href="#" routerLink="/classes"   style="text-decoration: none;">Classes</a></li>
+	  <li>
+		  Design and Analysis of Algorithms
+		</li>
+    </ol>
+    
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+  <div class= "container">
+    <div class= "row  p-5">
+        <div class="col-md-9 col-ms-9">
+            <div class= "landpage-left mt-3 ">
+			<h3 class="card-title mb-3">smartlearn <small><em>File Upload</em> </small></h3>
+
+			<div class="row">
+				<div class="col-sm-6 left">
+					<ngx-dropzone (change)="onSelect($event)">
+						<ngx-dropzone-label style="color: #808080;"><span ><fa-icon [icon]="faPlus" class="p-1"></fa-icon><span>Click and
+							Drop images here!</span></span></ngx-dropzone-label>
+						<ngx-dropzone-preview *ngFor="let f of files" [removable]="true" (removed)="onRemove(f)">
+							<ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
+						</ngx-dropzone-preview>
+					</ngx-dropzone>
+				</div>
+				<div class="col-sm-6 right d-flex  mt-2">
+					<div class="float-sm-right">
+						<div class="btn-group" style="width: 310px;">
+							<button class="btn btn-primary start" >
+							  <fa-icon [icon]="faUpload" class="p-1"></fa-icon>
+							  <span>Start Upload</span>
+							</button>
+							<button data-dz-remove="" class="btn btn-warning cancel">
+							  <fa-icon [icon]="faTimes" class="p-1"></fa-icon>
+							  <span>Cancel Upload</span>
+							</button>
+							
+					</div>
+		
+				</div>
+			</div>
+
+		   
+		     </div>
+            <div class="row" >
+				<div class= "col-sm-6 mt-5"  >
+					<input type="file" class="custom-file-input" id="customFile">	
+				</div>
+				
+				<div class="col-sm-6 right d-flex  mt-5">
+					<div class="float-sm-right">
+						<div class="btn-group" style="width: 310px;">
+							<button class="btn btn-primary start" >
+							  <fa-icon [icon]="faUpload" class="p-1"></fa-icon>
+							  <span>Start Upload</span>
+							</button>
+							<button data-dz-remove="" class="btn btn-warning cancel">
+							  <fa-icon [icon]="faTimes" class="p-1"></fa-icon>
+							  <span>Cancel Upload</span>
+							</button>
+							
+					</div>
+		
+				</div>
+			</div>
+	
+	
+			</div>
+			</div>
+		</div>	
+        <div class= "col-md-3 col-ms-3">
+            <div class= "landpage-rigt mt-3 justify-content-center">
+				<p>
+					<button type="button" class="btn btn-primary " (click)="collapse.toggle()" [attr.aria-expanded]="!isCollapsed"
+					  aria-controls="collapseExample" style="width: 100%;">
+					  <h5>View Class</h5>
+					</button>
+				  </p>
+				  <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
+					<div class="card">
+					  <div class="card-body">
+						<ul class="nav flex-column">
+							<li class="nav-item">
+							  <a href="#" class="nav-link">
+								Tatenda<span class="float-right badge bg-primary">lecturer</span>
+							  </a>
+							</li>
+							<li class="nav-item">
+							  <a href="#" class="nav-link">
+								Emerson <span class="float-right badge bg-info">Class Rep</span>
+							  </a>
+							</li>
+							<li class="nav-item">
+							  <a href="#" class="nav-link">
+								Valentine<span class="float-right badge bg-success"></span>
+							  </a>
+							</li>
+							<li class="nav-item">
+							  <a href="#" class="nav-link">
+								Stan<span class="float-right badge bg-danger"></span>
+							  </a>
+							</li>
+						  </ul>
+					  </div>
+					</div>
+				  </div>
+				
+            </div>
+        </div>
+    </div>
+  </div> 
+  
+
+
+

@@ -1,29 +1,27 @@
 <app-navbar></app-navbar>
-<section class= "breadcrumbs-section">
-    <div class= "container p-1 p-ms-3">
-        <div class= "row">
-           
-                <div class= "col-12">
-                    <ol class= "breadcrumb">
-                        <li class= "breadcrumb-item active" style="font-size: 1.2rem; font-weight: 450;">
-                        <a href= "#" routerLink="/home">Home</a> 
-                        </li>
-                    </ol>
-                </div>
-        
-        </div>    
+<section class= "breadcrumbs"> 
+    <div class="container">
+
+      <ol>
+        <li><a href="#" routerLink="/home" style="text-decoration: none;">Home</a></li>
+        <li>
+            </li>
+      </ol>
+      
+
     </div>
 </section>
 
-<section class= "homecards-section">
+
+<section class= "homecards-section ">
     <div class= "container mt-4">
         <div class= "row">
             <div class= "col-lg-4 col-md-4">
-                <div class= "card mb-3  ">
-                    <div class= "card-body blue">
-                        <img src= "assets/img/assessment.png">
-                        <h4>Classes</h4>
-                        <p class= "card-text">You can see the modules you are taking this semester</p>  
+                <div class= "card mb-3  " >
+                    <div class= "card-body blue ">
+                        <img src= "assets/img/assessment.png"><span><h4 class="float-right">Classes</h4></span>
+                        
+                        <p class= "card-text">Review learning resouces and the modules you are taking this semester</p>  
                         <a href= "#" routerLink= "/classes" class= "view-more" >
                         <span>View More</span>  
                         <fa-icon [icon]= "faArrowRight" class= "p-1"></fa-icon>
@@ -35,9 +33,9 @@
             <div class= "col-lg-4 col-md-4">
                 <div class= "card mb-3 ">
                     <div class= "card-body orange">
-                        <img src= "assets/img/chatting.png">
-                        <h4>Chat session</h4>
-                        <p class= "card-text">You can see the modules you are taking this semester</p>
+                        <img src= "assets/img/chatting.png"><span><h4 class="float-right d-flex">Chats</h4></span>
+                        
+                        <p class= "card-text">Engage in text-chat with indvidual students or with your Supervisor </p>
                         <a href= "#" routerLink= "/chat" class= "view-more" >
                             <span>View More</span>
                             <fa-icon [icon]= "faArrowRight" class= "p-1"></fa-icon>
@@ -48,10 +46,10 @@
 
             <div class= "col-lg-4 col-md-4 h-75">      
                 <div class= "card mb-3 ">
-                    <div class= "card-body green">
+                    <div class= "card-body pink">
                         <img src= "assets/img/quizin.png">
-                        <h4>Quizes</h4>
-                        <p class= "card-text">You can see the modules you are taking this semester</p>
+                        <span><h4 class="float-right d-flex">Quizes</h4></span>
+                        <p class= "card-text"> Engage and respond to a number of questions to assess your undertstanding  </p>
                         <a href= "#" routerLink= "/quiz" class= "view-more">
                         <span></span>View More  
                         <fa-icon [icon]= "faArrowRight" class= "p-1"></fa-icon>
@@ -64,8 +62,8 @@
                 <div class= "card mb-3 ">
                     <div class= "card-body purple">
                         <img src= "assets/img/notifications-active.png">
-                        <h4>Notices</h4>
-                        <p class= "card-text">You can see the modules you are taking this semester</p>
+                        <span><h4 class="float-right d-flex">Notices</h4></span>
+                        <p class= "card-text">View notifications for the entire class and your individual notifications</p>
                         <a href= "#" routerLink= "/notices" class= "view-more">View More
                         <fa-icon [icon]= "faArrowRight" class= "p-1"></fa-icon>
                         </a>
@@ -77,8 +75,8 @@
                 <div class= "card mb-3" >
                     <div class= "card-body red">
                         <img src= "assets/img/videochat.png">
-                        <h4>Video Session</h4>
-                        <p class= "card-text">You can see the modules you are taking this semester</p>
+                        <span><h4 class="float-right d-flex">VideoChat</h4></span>
+                        <p class= "card-text">Create live video sessions with individual students or with your Supervisor </p>
                         <a href= "#" routerLink= "/classes" class= "view-more">
                         <span>View More</span>
                             <fa-icon [icon]= "faArrowRight" class= "p-1"></fa-icon>
@@ -90,10 +88,11 @@
 
             <div class= "col-lg-4 col-md-4">
                 <div class= "card mb-3">
-                    <div class= "card-body pink">
+                    <div class= "card-body info">
                         <img src= "assets/img/account-user.png">
-                        <h4>MyProfile</h4>
-                        <p class= "card-text">You can see the modules you are taking this semester</p>
+                        <span><h4 class="float-right d-flex">MyProfile</h4 ></span>
+                            
+                        <p class= "card-text">Click to view more about your account.You can also view a timetable for your classes.</p>
                         <a href= "#" routerLink= "/myprofile"  class= "view-more">
                         <span>View More</span>
                         <fa-icon [icon]= "faArrowRight" class= "p-1"></fa-icon>
@@ -107,3 +106,131 @@
     </div>
     
 </section>
+
+
+<!---<div class="container">]
+    <div class="row">
+        <div class="tasklist ">
+            <div class="grid-margin stretch-card ">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">To Do Lists</h4>
+                        <div class="list-wrapper pt-2">
+                            <ul class="d-flex flex-column-reverse todo-list todo-list-custom">
+                                <li>
+                                    <div class="form-check form-check-flat">
+                                        <label class="form-check-label">
+                                            <input class="checkbox" type="checkbox">
+                                            Become A Travel Pro In One Easy Lesson
+                                       </label>
+                                    </div>
+                                    <i class="remove ti-trash"></i>
+                                </li>
+                                <li class="completed">
+                                    <div class="form-check form-check-flat">
+                                        <label class="form-check-label">
+                                            <input class="checkbox" type="checkbox" checked="">
+                                            See The Unmatched Beauty Of The Great Lakes
+                                        <i class="input-helper"></i></label>
+                                    </div>
+                                    <fa-icon [icon]= "faTrash" class="remove"></fa-icon>
+                                </li>
+                                <li>
+                                    <div class="form-check form-check-flat">
+                                        <label class="form-check-label">
+                                            <input class="checkbox" type="checkbox">
+                                            Copper Canyon
+                                        <i class="input-helper"></i></label>
+                                    </div>
+                                    <i class="remove ti-trash"></i>
+                                </li>
+                                
+                                <li>
+                                    <div class="form-check form-check-flat">
+                                        <label class="form-check-label">
+                                            <input class="checkbox" type="checkbox">
+                                            Travelagent India
+                                        <i class="input-helper"></i></label>
+                                    </div>
+                                    <i class="remove ti-trash"></i>
+                                </li>
+                            <li> 
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="checkbox" type="checkbox">
+                                        ka ka KM,ZAM 
+                                        <i class="input-helper"></i></label>
+                                        </div><i class="remove ti-trash"></i>
+                                    </li>
+                            </ul>
+        
+        
+                </div>
+        <div class="add-items d-flex mb-0 mt-4">
+                            <input type="text" class="form-control todo-list-input mr-2" placeholder="Add new task">
+                            <button class="add btn btn-icon text-primary todo-list-add-btn bg-transparent">
+                                <fa-icon [icon]="faLocationArrow"></fa-icon>                    
+                              </button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </div>      
+    </div>
+</div>
+-->
+
+
+
+<footer id="footer" class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6 col-md-12 footer-info">
+            <a href="index.html" class="logo d-flex align-items-center text-decoration-none">
+             
+                <h3>smartlearn
+                <span>
+                    <fa-icon [icon]="faGraduationCap"></fa-icon>
+                  </span>
+               </h3>
+            </a>
+         
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><fa-icon [icon]="faWhatsapp"></fa-icon></a>
+              <a href="#" class="facebook"><fa-icon [icon]="faFacebook"></fa-icon></a>
+              <a href="#" class="instagram"><fa-icon [icon]="faInstagram"></fa-icon></a>
+              <a href="#" class="linkedin"><fa-icon [icon]="faLinkedin"></fa-icon></a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><fa-icon [icon]="faChvronRight" class="chevron"></fa-icon><a href="#">Home</a></li>
+              <li><fa-icon [icon]="faChvronRight" class="chevron"></fa-icon><a href="#">Classes</a></li>
+              <li><fa-icon [icon]="faChvronRight" class="chevron"></fa-icon> <a href="#">Notifications</a></li>
+              <li><fa-icon [icon]="faChvronRight" class="chevron"></fa-icon> <a href="#">Go-Live</a></li>
+              <li><fa-icon [icon]="faChvronRight" class="chevron"></fa-icon> <a href="#">MyProfile</a></li>
+              <li><fa-icon [icon]="faChvronRight" class="chevron"></fa-icon> <a href="#">MyProfile</a></li>
+            </ul>
+          </div>
+
+        
+
+          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+            <h4>Have a Question?</h4>
+            <p>
+              <strong>Phone:</strong> +263 782 480 831<br><br>
+              <strong>Email:</strong> mchemakacodes@gmail.com<br>
+            </p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+ 
+  </footer>

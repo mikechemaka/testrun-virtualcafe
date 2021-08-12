@@ -1,28 +1,32 @@
 
 <app-navbar></app-navbar>
-<section class= "breadcrumbs-section">
-    <div class= "container p-1 p-ms-3">
-        <div class= "row">
-            <div class= "col-sm-6">
-                <ol class= "breadcrumb">
-                    <li class= "breadcrumb-item" style="font-size: 1.2rem; font-weight: 450;">
-                        <a href= "#" routerLink="/home">Home</a> 
-                    </li>
+<section class= "breadcrumbs"> 
+  <div class="container">
 
-                    <li class= "breadcrumb-item active" style="font-size: 1.2rem; font-weight: 450;">
-                    <a href= "#" routerLink="/classes"></a> Classes   </li>
-                </ol>
-            </div>
-            <div class= "col-sm-6">
-              <div class="breadcrumb float-sm-right">
-                <h5 style="color: #6c757d;font-weight: 500;">Profile</h5>
-              </div>
-            </div>
-        </div>
-    </div>
+    <ol>
+      <li><a href="#" routerLink="/home" style="text-decoration: none;">Home</a></li>
+      <li>MyProfile</li>
+	  
+    </ol>
+    
+
+  </div>
 </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
 <section class= "content">
-<div class="container-fluid mt-4">
+<div class="container mt-4">
     <div class="row">
         <div class="col-md-4">
           <div class=" card card-widget widget-user-2 shadow-sm">
@@ -32,11 +36,15 @@
                 </div>
                 <!-- /.widget-user-image -->
                 <h3 class="widget-user-username">Michael Chemaka</h3>
-                <h5 class="widget-user-desc">Computer science Student</h5>
+                <h5 class="widget-user-desc"> Student</h5>
               
               </div>
-              <div class="card-footer p-0">
+              <div class="card list-group  p-0">
                 <ul class="nav flex-column">
+                <ul class="nav flex-column">
+                    <li class="nav-item">Reg.Number<span class="float-right badge bg-info">R1917839B</span></li>
+                </ul>
+
                   <li class="nav-item">Level <span class="float-right badge bg-primary">2.2</span></li>
                 </ul>
               
@@ -44,129 +52,67 @@
                   <li class="nav-item">Modules <span class="float-right badge bg-info">5</span></li>
                 </ul>
 
-                <a href="#" class="btn btn-primary btn-lg btn-block"><b>Follow</b></a>
+                <ul class="nav flex-column">
+                  <li class="nav-item">Degree <span class="float-right badge bg-warning">computer science </span></li>
+                </ul>
 
+                
+                <div class="card-footer">
+                  <strong class="card-title mb-3">Profile Card</strong>
+              </div>
+             
               </div>
             </div>  
+
+            <div class="card card-warning mt-3" >
+              <div class="card-header">
+                <h4 class="card-title text-info" >About Me</h4>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body   ">
+                <strong><i class="fas fa-book mr-1" style="color: #4e73df;" ></i> Education</strong>
+
+                <p class="text-muted">
+                  B.S. in Computer Science  Midlands State University 
+                </p>
+
+                <hr>
+
+                <strong><i class="fas fa-map-marker-alt mr-1"></i> Location</strong>
+
+                <p class="text-muted">Gweru, Zimbabwe</p>
+
+                <hr>
+
+                <strong><i class="fas fa-pencil-alt mr-1"></i> Skills</strong>
+
+                <p class="text-muted">
+                  <span class="tag tag-danger">UI Design</span>
+                  <span class="tag tag-success">Coding</span>
+                  <span class="tag tag-info">Javascript</span>
+                  <span class="tag tag-warning">PHP</span>
+                  <span class="tag tag-primary">Node.js</span>
+                </p>
+
+                <hr>
+
+                <strong><i class="far fa-file-alt mr-1"></i> Notes</strong>
+
+                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum enim neque.</p>
+              </div>
+              <!-- /.card-body -->
+            </div>
         </div>
-        <div class="card card-primary">
-          <div class="card-header">
-            <h3 class="card-title">About Me</h3>
-          </div>
-          <!-- /.card-header -->
-          <div class="card-body">
-            <strong><i class="fas fa-book mr-1"></i> Education</strong>
 
-            <p class="text-muted">
-              B.S. in Computer Science from the University of Tennessee at Knoxville
-            </p>
-
-            <hr>
-
-            <strong><i class="fas fa-map-marker-alt mr-1"></i> Location</strong>
-
-            <p class="text-muted">Malibu, California</p>
-
-            <hr>
-
-            <strong><i class="fas fa-pencil-alt mr-1"></i> Skills</strong>
-
-            <p class="text-muted">
-              <span class="tag tag-danger">UI Design</span>
-              <span class="tag tag-success">Coding</span>
-              <span class="tag tag-info">Javascript</span>
-              <span class="tag tag-warning">PHP</span>
-              <span class="tag tag-primary">Node.js</span>
-            </p>
-
-            <hr>
-
-            <strong><i class="far fa-file-alt mr-1"></i> Notes</strong>
-
-            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum enim neque.</p>
-          </div>
-          <!-- /.card-body -->
-        </div>
         <div class="col-md-8">
-          <p class="text-center">
-            <strong>Goal Completion</strong>
-          </p>
 
-          <div class="progress-group">
-            Add Products to Cart
-            <span class="float-right"><b>120</b>/200</span>
-            <div class="progress progress-sm">
-              <div class="progress-bar bg-primary" style="width: 80%"></div>
-            </div>
-          </div>
-          <!-- /.progress-group -->
-
-          <div class="progress-group">
-            Complete Purchase
-            <span class="float-right"><b>310</b>/400</span>
-            <div class="progress progress-sm">
-              <div class="progress-bar bg-danger" style="width: 75%"></div>
-            </div>
-          </div>
-
-          <!-- /.progress-group -->
-          <div class="progress-group">
-            <span class="progress-text">Visit Premium Page</span>
-            <span class="float-right"><b>480</b>/800</span>
-            <div class="progress progress-sm">
-              <div class="progress-bar bg-success" style="width: 60%"></div>
-            </div>
-          </div>
-
-          <!-- /.progress-group -->
-          <div class="progress-group">
-            Send Inquiries
-            <span class="float-right"><b>250</b>/500</span>
-            <div class="progress progress-sm">
-              <div class="progress-bar bg-warning" style="width: 50%"></div>
-            </div>
-          </div>
-          <!-- /.progress-group -->
+          <h2>hello mike am good  and how is the app coming About</h2>
         </div>
-    </div>
-</div>
-</section>
+         
+        
 
-<div class="footer-variant-2-bottom-panel">
-  <div class="container">
-    <!-- Rights-->
-    <div class="group-sm group-sm-justify">
-      <p class="rights"><span>©&nbsp;</span><span class="copyright-year">2021</span> <span>Herber</span>. All rights reserved
-      </p>
-      <p class="rights">Design&nbsp;by&nbsp;<a href="https://www.templatemonster.com/">Templatemonster</a></p>
-    </div>
-  </div>
+    </div>  
 </div>
+</section>    
 
-<div class="copyright">
-  <div class="container">
-     <div class="row">
-      <div class="col-md-6 col-sm-6 left">
-        <p>smartlearn</p>
-      </div>
-      <div class="col-md-6 col-sm-6 right">
-        <div class="breadcrumb float-sm-right">
-          <ul>
-            <li><a href="#" routerLink=""><fa-icon [icon]= "faEnvelope"></fa-icon></a>
-              
-            </li>
-            <li><a href="#" routerLink=""><fa-icon [icon]= "faWhatsapp"></fa-icon></a>
-            
-            </li>
-            <li><a href="#" routerLink=""><fa-icon [icon]= "faLinkedin"></fa-icon></a>
-              
-            </li>
-          </ul>
-        </div>
-       
-      </div>
-
-     </div>
-  </div>
-</div>
- 
+<br>

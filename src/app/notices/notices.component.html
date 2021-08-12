@@ -1,54 +1,164 @@
 <app-navbar></app-navbar>
-<section class= "breadcrumbs-section">
-    <div class= "container p-1 p-ms-3">
-        <div class= "row">
-            <div class= "col-12">
-                <ol class= "breadcrumb">
-                    <li class= "breadcrumb-item" style="font-size: 1.2rem; font-weight: 450;">
-                        <a href= "#" routerLink="/home">Home</a> 
-                    </li>
-
-                    <li class= "breadcrumb-item active" style="font-size: 1.2rem; font-weight: 450;">
-                    <a href= "#" routerLink="/notices"></a> Notices </li>
-                </ol>
-            </div>
-        </div>
+<section class= "breadcrumbs"> 
+    <div class="container">
+  
+      <ol>
+        <li><a href="#" routerLink="/home" style="text-decoration: none;">Home</a></li>
+        <li>
+            Notices</li>
+      </ol>
+      
+  
     </div>
-</section>
-
+  </section>
+  
     <div class= "container one mt-4 p-1 p-ms-3">
         <div class= "row">
-            <div class= "col-lg-10 offset-md-1">
-                <div class= "card border-warning mb-2" >
-                    <div class= "card-body">
-                        <h4 class= "card-title text-warning">This week</h4>
-                        <p class= "card-text">You can see the modules you are taking this semester</p>
-                        <a href= "#" routerLink= "/classes" class= "btn btn-outline-warning">View More</a>
-                    </div>
-                </div>
+            <div class="col-md-3 col-sm-3 ">
+            <div class="info-box bg-warning">
+              
+              <span class="info-box-icon"><fa-icon [icon]="faCalenderCheck"></fa-icon></span>
 
-                <div class= "card border-success mb-2">
-                    <div class= "card-body ">
-                        <h4 class= "card-title text-success">Last Week</h4>
-                        <p class= "card-text">You can see the modules you are taking this semester</p>
-                        <a href= "#" routerLink= "/classes" class= "btn btn-outline-success">View More</a>
-                    </div>
-                </div>
+              <div class="info-box-content">
+                <span class="info-box-text">Notifications</span>
+                <span class="info-box-number">264</span>
 
-                  
-                <div class= "card border-danger mb-2" >
-                    <div class= "card-body">
-                        <h4 class= "card-title text-danger">Last Month</h4>
-                        <p class= "card-text">You can see the modules you are taking this semester</p>
-                        <a href= "#" routerLink= "/classes" class= "btn btn-outline-danger">View More</a>
-                    </div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 70%"></div>
                 </div>
-
-        
+                <span class="progress-description">
+                  70% Increase in 30 Days
+                </span>
+              </div>
+              <!-- /.info-box-content -->
             </div>
-        </div>
-    </div>
+            <!-- /.info-box -->
+          </div>
+         
+            <div class= "col-md-9 col-sm-9">
+                <div class= "card warning mb-4" >
+                  <div class="card-header ">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h5> All Notifications</h5>
+                      </div>
+                      <div class="col-md-6">
+                        <form class = "searchbar float-right mx-auto col-lg-8">
+                          <div class="input-group">
+                            <input type="text" class="form-control bg-light border-primary small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button">
+                                   <fa-icon [icon]= "faSearch"></fa-icon>
+                                </button>
+                            </div>
+                        </div>
+                        </form>
+                      </div>
+                    </div>
+                    
+                    
+                  </div>
+                  <div class="card-body">
+                    <table class="table table-hover table-striped">
+                      <tbody>
+                      <tr>
+                        <td>
+                          <div class="icheck-primary">
+                            <input type="checkbox" value="" id="check1">
+                            <label for="check1"></label>
+                          </div>
+                        </td>
+                        <td class="mailbox-star"><a href="#"><fa-icon [icon]="faStar" class="text-warning"></fa-icon>   </a></td>
+                        <td class="mailbox-name"><a href="read-mail.html">Osy Shingi</a></td>
+                        <td class="mailbox-subject"><b>internship Opportunities</b> - Trying to find a solution to this problem...
+                        </td>
+                        <td class="mailbox-attachment"></td>
+                        <td class="mailbox-date">5 mins ago</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="icheck-primary">
+                            <input type="checkbox" value="" id="check2">
+                            <label for="check2"></label>
+                          </div>
+                        </td>
+                        <td class="mailbox-star"><a href="#"><fa-icon [icon]="faStar" class="text-warning"></fa-icon> </a></td>
+                        <td class="mailbox-name"><a href="read-mail.html">Oby Shel</a></td>
+                        <td class="mailbox-subject"><b> CV Done</b> - Trying to find a solution to this problem...
+                        </td>
+                        <td class="mailbox-attachment"><i class="fas fa-paperclip"></i></td>
+                        <td class="mailbox-date">28 mins ago</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="icheck-primary">
+                            <input type="checkbox" value="" id="check3">
+                            <label for="check3"></label>
+                          </div>
+                        </td>
+                        <td class="mailbox-star"><a href="#"><fa-icon [icon]="faStar" class="text-warning"></fa-icon></a></td>
+                        <td class="mailbox-name"><a href="read-mail.html">Munya dev</a></td>
+                        <td class="mailbox-subject"><b>New mobile launch</b> - Trying to find a solution to this problem...
+                        </td>
+                        <td class="mailbox-attachment"><i class="fas fa-paperclip"></i></td>
+                        <td class="mailbox-date">11 hours ago</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="icheck-primary">
+                            <input type="checkbox" value="" id="check4">
+                            <label for="check4"></label>
+                          </div>
+                        </td>
+                        <td class="mailbox-star"><a href="#"><fa-icon [icon]="faStar" class="text-warning"></fa-icon></a></td>
+                        <td class="mailbox-name"><a href="read-mail.html">Stan Angular</a></td>
+                        <td class="mailbox-subject"><b> Web app Ready</b> - Trying to find a solution to this problem...
+                        </td>
+                        <td class="mailbox-attachment"></td>
+                        <td class="mailbox-date">15 hours ago</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="icheck-primary">
+                            <input type="checkbox" value="" id="check5">
+                            <label for="check5"></label>
+                          </div>
+                        </td>
+                        <td class="mailbox-star"><a href="#"><fa-icon [icon]="faStar" class="text-warning"></fa-icon> </a></td>
+                        <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
+                        <td class="mailbox-subject"><b>join class Video Session </b> - Trying to find a solution to this problem...
+                        </td>
+                        <td class="mailbox-attachment"><i class="fas fa-paperclip"></i></td>
+                        <td class="mailbox-date">Yesterday</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="icheck-primary">
+                            <input type="checkbox" value="" id="check6">
+                            <label for="check6"></label>
+                          </div>
+                        </td>
+                        <td class="mailbox-star"><a href="#"><fa-icon [icon]="faStar" class="text-warning"></fa-icon> </a></td>
+                        <td class="mailbox-name"><a href="read-mail.html">Valentine</a></td>
+                        <td class="mailbox-subject"><b>New Assignment software eginnering</b> - Trying to find a solution to this problem...
+                        </td>
+                        <td class="mailbox-attachment"><i class="fas fa-paperclip"></i></td>
+                        <td class="mailbox-date">2 days ago</td>
+                      </tr>
+                     
+                       
+                     
+                      
+                       
+                     
+                      </tbody>
+                    </table>
+                  </div>
+                  
+                </div>
 
-<div>
-  
-</div>
+          
+            </div>
+        
+
+   

@@ -8,30 +8,42 @@
                   <h1 class="h4 header-color mb-3">Create an Account!</h1>
                </div>
 
-              <form class= "loginform">
+              <form #formData='ngForm'  (ngSubmit)= "onSubmit(formData)" class="loginform needs-validation" >
                 <div class="form-group row">
                   <div class="col-sm-6" style="margin-bottom:1rem;" >
-                    <input type="text" name= "name" id= "name" class= "form-control form-control-user" placeholder= "Enter Your Name" required>
+                    <input type="text" name= "name" id= "name" class= "form-control form-control-user" (ngModel)="name" placeholder= "Enter Your Name" required>
+                    <div class="valid-feedback">Valid Name.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
                   </div> 
                    <div class="col-sm-6"style="margin-bottom:1rem;">
-                     <input type="text" name= "surname" id= "surname" class= "form-control form-control-user" placeholder= "Enter Your Surname" required>
+                     <input type="text" name= "surname" id= "surname" class= "form-control form-control-user" (ngModel)="surname" placeholder= "Enter Your Surname" required>
+                     <div class="valid-feedback">Valid Surname.</div>
+                     <div class="invalid-feedback">Please fill out this field.</div>
                   </div>
                   <div class= "col-sm-12" style="margin-bottom:1rem;">
-                    <input type="text" name= "username" class= "form-control form-control-user" placeholder= "Enter Your Username" required= "required">
+                    <input type="text" name= "username" class= "form-control form-control-user" (ngModel)="username" placeholder= "Enter Your Username" required>
+                    <div class="valid-feedback">Valid Username.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
                   </div>           
                   <div class="col-sm-6" style="margin-bottom:1rem;">
-                   <input type="password" name= "password" id= "password" class= "form-control form-control-user" placeholder= "Enter Your Password" required= "required">
+                   <input type="password" name= "password" id= "password" class= "form-control form-control-user" (ngModel)="password"placeholder= "Enter Your Password" required>
+                   <div class="valid-feedback">Valid Password.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
                   </div> 
                   <div class="col-sm-6" style="margin-bottom:1rem;">
-                    <input type="password" name= "confirm-password" id= "confirm-password" class= "form-control form-control-user" placeholder= "Confirm Password" required= "required">
+                    <input type="password" name= "confirmpassword" id= "confirmpassword" class= "form-control form-control-user" (ngModel)="confirmpassword" placeholder= "Confirm Password" required>
+                    <div class="valid-feedback">Valid Password confirmation.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
                   </div> 
               
                   <div class= "col-sm-12" style="margin-bottom:1rem;">
-                    <input type="text" name= "email" class= "form-control form-control-user" placeholder= "Enter Your E-mail" required= "required">
+                    <input type="email" name= "email" class= "form-control form-control-user" (ngModel)="email" placeholder= "Enter Your E-mail" required>
+                    <div class="valid-feedback">Valid Email.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
                   </div>
             
                    <div class= "col-sm-12" style="margin-bottom:1rem;">
-                <button type="submit" class= "btn btn-primary btn-user btn-block ">
+                <button type="submit" (click)='validate()' class= "btn btn-primary btn-user btn-block ">
                   <span>Register</span>
                   <fa-icon [icon]="faPaperPlane" class= "p-2"></fa-icon>
                 </button>
@@ -61,7 +73,12 @@
             <div class="container">
                <div class="row">
                 <div class="col-md-6 col-sm-6 left">
-                  <h1>smartlearn</h1>
+                  <h1>smartlearn
+                    <span>
+                      <fa-icon [icon]="faGraduationCap"></fa-icon>
+                    </span>
+                  </h1>
+                
                 </div>
                 <div class="col-md-6 col-sm-6 right">
                   <div class="breadcrumb float-sm-right">

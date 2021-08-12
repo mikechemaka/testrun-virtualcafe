@@ -1,75 +1,85 @@
-.container{
+.navbar.header-scrolled {
+    background: #fff;
+    padding: 15px 0;
+    box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
+}
+
+.navbar {
+    transition: all 0.5s;
+    z-index: 997;
+    padding: 20px 0;
+}
+.container-fluid{
     padding-left: 5px;
     padding-right: 5px;
     margin-right: auto;
     margin-left: auto;
 
 }
-.nav {
-    padding-left: 0;
-    list-style: none;
-}
-
 
 .navbar-brand {
-    display: inline-block;
+    letter-spacing: 1px;
     padding-top: .3125rem;
     padding-bottom: .3125rem;
-    margin-right: 1rem;
+    margin-left: 1.1rem;
     font-size: 30px;
-    font-weight: 500;
-    line-height: inherit;
+    font-weight: 700;
+    font-family: "Nunito", sans-serif;
     white-space: nowrap;
-}
-/*.collapse:not(.show){
-    display: none;
-}*/
+    color: #4154f1!important;
 
-/*.navbar-collapse.collapse {
-    display: block !important;
-    height: auto !important;
-    padding-bottom: 0;
-    overflow: visible !important;
-    
-}*/
-.navbar-collapse {
-    
-    align-items: center;
 }
-.navbar-nav {
+.navbar-brand:hover{
+    color: #012970
+}
+
+a {
+    text-decoration: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.navbar .navbar-nav{
+    margin: 0;
+    padding: 0;
     display: flex;
-    padding-left: 0;
-    margin-bottom: 0;
     list-style: none;
+    align-items: center;
+
 }
 
-    
-.navbar-collapse .navbar-nav.ms-auto:last-child {
-    margin-right: -15px;
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: .9rem;
+    padding-left: .9rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #4154f1;
+    white-space: nowrap;
+
 }
- .ms-auto {
-    float: right !important;
-}
-/*.navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: .5rem;
-    padding-left: .5rem;
-   
-}*/
-.navbar-nav .nav-link {
-    display: block;
-    position: relative;
-    color:#fff;
-    border-color: #fff;
-    opacity: 1.5;
-    font-size: 18px;
-    font-weight: 500;
-    float: right;
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+    background: #4154f1;
+    padding: 8px 12px;
+    border-radius: 4px;
+    color: #fff;
 }
 
-.footer-variant-2-bottom-panel {
-    background: #222120;
-    padding: 30px 0;
-}
-.right {
-    text-align: right !important;
-}
+.navbar-dark .navbar-toggler {
+    color: #0d6efd;
+    border-color: #0d6efd ;}
+
+
+
+
+
+
+
+
+
+
+
+

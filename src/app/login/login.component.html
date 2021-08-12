@@ -8,20 +8,25 @@
                 <h1 class="h4 header-color mb-3">Welcome back!</h1>
              </div>
              
-             <form class= "loginform">
+             <form  #formData='ngForm' (ngSubmit)='onSubmit(formData)'    class= "loginform needs-validation">
               <div class= "form-group p-2">
-                <input type="username" name= "username" id= "username" class= "form-control form-control-user" placeholder= "Enter Your Username" required= "required">
+                <input type="text" name= "username" id= "username" class= "form-control form-control-user" (ngModel)="username" placeholder= "Enter Your Username..." required>
+                <div class="valid-feedback">Valid Username.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
               </div>
              
               <div class= "form-group p-2">
-                <input type="password" name= "password" id= "password" class= "form-control form-control-user" placeholder= "Enter Your Password" required= "required">
+                <input type="password" name= "password" id= "password" class= "form-control form-control-user" (ngModel)="password" placeholder= "Enter Your Password..." required>
+                <div class="valid-feedback">Valid Password.</div>
+             <div class="invalid-feedback">Please fill out this field.</div>
+
               </div>
-             
               
               <div class= "form-group p-2">
-                <button type="submit" style="width: 100%;"  class= "btn btn-primary btn-user" >
-                  <span>Login</span>
+                <button type="submit" (click)="validate()"  style="width: 100%;"       class= "btn btn-primary btn-user"  >
+                 <b> <span>Login</span>
                   <fa-icon [icon]= "faSignInAlt" class= "p-2"></fa-icon>
+                 </b>
                 </button>
               </div> 
             
@@ -51,7 +56,11 @@
     <div class="container">
        <div class="row">
         <div class="col-md-6 col-sm-6 left">
-          <h1>smartlearn</h1>
+          <h1>smartlearn
+             <span>
+            <fa-icon [icon]="faGraduationCap"></fa-icon>
+          </span>
+        </h1>
         </div>
         <div class="col-md-6 col-sm-6 right">
           <div class="breadcrumb float-sm-right">

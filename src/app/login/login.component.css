@@ -29,6 +29,7 @@ form.loginform .form-control-user {
     font-size: .9rem;
     padding: .8rem 1rem;
 }
+
 form.loginform .btn-user {
     font-size: 1rem;
     padding: .8rem 1rem;
@@ -42,7 +43,7 @@ img.displayed{
 
 a{
     width: 100px;
-    cursor:ponter;
+    cursor:pointer;
     text-decoration: none;
     background-color: transparent;
 }
@@ -50,10 +51,10 @@ a:hover{
     text-decoration: underline;
 }
 .small {
-    font-size: 80%;
+    font-size: 0.875rem;
     font-weight: 400;
 }
-r {
+r{
     margin-top: 1rem;
     margin-bottom: 1rem;
     border: 0;

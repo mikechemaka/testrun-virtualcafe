@@ -1,98 +1,165 @@
 <app-navbar></app-navbar>
-<section class= "breadcrumbs-section">
-    <div class= "container p-1 p-ms-3">
-        <div class= "row">
-            <div class= "col-12">
-                <ol class= "breadcrumb">
-                    <li class= "breadcrumb-item" style="font-size: 1.2rem; font-weight: 450;">
-                        <a href= "#" routerLink="/home">Home</a> 
-                    </li>
+<section class= "breadcrumbs"> 
+  <div class="container">
 
-                    <li class= "breadcrumb-item active" style="font-size: 1.2rem; font-weight: 450;">
-                    <a href= "#" routerLink="/classes"></a> Classes   </li>
-                </ol>
-            </div>
-        </div>
-    </div>
-</section>
+    <ol>
+      <li><a href="#" routerLink="/home" style="text-decoration: none;">Home</a></li>
+      <li>
+          Classes</li>
+    </ol>
+    
 
-<section class= "classes-section">
-  <div class= "container order">
-      <div class= "row"> 
-        <div class= "col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class= "card mb-3  d-inline-block"  >
-                <div class= "card-body one">
-                  <h4 style="color: #ff901c; ">Software<br> Engineering</h4>
-                  <h5 style="color: #ff901c; ">HCSCI222</h5>
-                  <img src="assets/img/values-3.png" class= "img-fluid" alt="">
-                   <ul>
-                     <li><a href= "#" style="color:#ff901c">Assignments</a>
-                    <p>View and send all of your Assignments here</p></li>
-                    <li><a href= "#" style="color:  #ff901c">Learning Material</a>
-                      <p>Don't miss out all the module materials from your lecturers</p></li>
-                   </ul> 
-                    
-                    
-                  </div>
-            </div>
-        </div>
-
-        <div class= "col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class= "card mb-3 ">
-                <div class= "card-body two">
-                  <h4 style="color: #07d5c0;">Object Oriented Programming</h4>
-                  <h5 style="color: #07d5c0;">HCSE224</h5>
-                  <img src="assets/img/values-3.png" class="img-fluid" alt="">
-                   <ul>
-                     <li><a href= "#" style="color: #07d5c0;">Assignments</a>
-                    <p>View and send all of your Assignments here</p></li>
-                    <li><a href= "#" style="color: #07d5c0;">Learning Material</a>
-                      <p>Don't miss out all the module materials from your lecturers</p></li>
-                   </ul> 
-                    
-                    
-                  </div>
-            </div>
-        </div>
-        
-        <div class= "col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class= "card mb-3 ">
-                <div class= "card-body three">
-                
-                  <h4 style="color: #65c600;">Data Communications and Computer Networks</h4>
-                  <h5 style="color: #65c600;">HCSCI221</h5>
-                  <img src="assets/img/values-3.png" class="img-fluid" alt="">
-                   <ul>
-                     <li><a href= "#" style="color: #65c600; ">Assignments</a>
-                    <p>View and send all of your Assignments here</p></li>
-                    <li><a href= "#" style="color: #65c600;">Learning Material</a>
-                      <p>Don't miss out all the module materials from your lecturers</p></li>
-                   </ul> 
-                    
-                    
-                  </div>
-            </div>
-        </div>
-
-
-        <div class= "col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class= "card mb-3">
-                <div class= "card-body four">
-                <span class="electives">Electives</span>
-                  <h4 style="color: #0275d8;">Design and Analysis of Algorithms</h4>
-                  <h5 style="color: #0275d8;">HCSCI224</h5>
-                  <img src="assets/img/values-3.png" class="img-fluid" alt="">
-                   <ul>
-                     <li><a href= "#" style="color: #0275d8;">Assignments</a>
-                    <p>View and send all of your Assignments here</p></li>
-                    <li><a href= "#" style="color: #0275d8;">Learning Material</a>
-                      <p>Don't miss out all the module materials from your lecturers</p></li>
-                   </ul> 
-                    
-                    
-                  </div>
-            </div>
-        </div>
-    </div>
   </div>
 </section>
+
+
+
+
+<div class= "container ">
+    <div class="row">
+        <div class="col-lg-4 col-md-4">
+            <div class="card">
+                <img class="card-img-top " src="assets/img/svg/class1.svg" alt="">
+                <div class="card-body">
+                
+                    <h5 style="color: #808080" class="text-color">Software Engineering </h5>          
+                     <h5 style="color: #808080; margin-bottom: 20px;" class="text-color">HCSCI222</h5>
+              
+                      
+                <a href="# " routerLink="/software" class="classlink" >View More
+                    <span>
+                        <fa-icon [icon]="faArrowRight" class= "p-1 "></fa-icon>
+                    </span>
+                </a>
+                        
+            
+              
+                </div>
+                <div class=" card-footer bg-primary">
+                    <h5 style="color: #fff">James</h5> 
+                </div>
+        </div>
+    </div>   
+    
+    <div class="col-lg-4 col-md-4">
+        <div class="card">
+            <img class="card-img-top " src="assets/img/svg/class1.svg" alt="">
+            <span class="text-white">Elective</span>
+            <div class="card-body">
+            
+                <h5 style="color: #808080" class="text-color">Analysis of Algorithms</h5>       
+                 <h5 style="color: #808080; margin-bottom: 20px;" class="text-color">HCSCI224</h5>
+          
+                  
+            <a href="# " routerLink="/algorithms" class="classlink" >View More
+                <span>
+                    <fa-icon [icon]="faArrowRight" class= "p-1 "></fa-icon>
+                </span>
+            </a>
+                    
+        
+          
+            </div>
+            <div class=" card-footer bg-primary">
+                <h5 style="color: #fff">Tatenda</h5> 
+            </div>
+    </div>
+     </div> 
+     
+     <div class="col-lg-4 col-md-4">
+        <div class="card">
+            <img class="card-img-top " src="assets/img/svg/class1.svg" alt="">
+            <div class="card-body">
+            
+                <h5 style="color: #808080"class="text-color">Object Oriented Programming</h5>            
+                 <h5 style="color: #808080; margin-bottom: 17px;" class="text-color">HCSCI222</h5>
+          
+                  
+            <a href="# " routerLink="/oop" class="classlink" >View More
+                <span>
+                    <fa-icon [icon]="faArrowRight" class= "p-1 "></fa-icon>
+                </span>
+            </a>
+                    
+        
+          
+            </div>
+            <div class=" card-footer bg-primary">
+                <h5 style="color: #fff">Valentine</h5> 
+            </div>
+    </div>
+     </div> 
+
+
+     <div class="col-lg-4 col-md-4">
+        <div class="card">
+            <img class="card-img-top " src="assets/img/svg/class1.svg" alt="">
+            <div class="card-body">
+            
+                <h5 style="color: #808080" class="text-color">Data Communications and Computer Networks</h5>            
+                 <h5 style="color: #808080; margin-bottom: 20px;" class="text-color">HCSCI221</h5>
+          
+                  
+            <a href="# " routerLink="/datacoms" class="classlink" >View More
+                <span>
+                    <fa-icon [icon]="faArrowRight" class= "p-1 "></fa-icon>
+                </span>
+            </a>
+                    
+        
+          
+            </div>
+            <div class=" card-footer" style="background:#0056b3;" >
+                <h5 style="color: #fff">Mike</h5> 
+            </div>
+    </div>
+     </div> 
+
+
+
+     <div class="col-lg-4 col-md-4">
+    
+   </div> 
+
+
+
+
+
+
+
+   <div class="col-lg-4 col-md-4">
+    <div class="card">
+        <img class="card-img-top " src="assets/img/svg/class1.svg" alt="">
+        <div class="card-body">
+        
+            <h5 style="color: #808080" class="text-color">Hello Michaeal!</h5>            
+             <p style="color: #808080; margin-bottom: 10px; font-family: 'Times New Roman', Times, serif;font-size: 20px;" class="text-color" >You can Join or Unerol classes here!</p>
+      
+         <div class= "row " style="margin-bottom: 10px;">
+           <div class="col">
+            <button type="button" class="btn btn-block btn-success" style="font: size 15px;font-weight: 500 ;" >Join
+              <span>
+                 <fa-icon [icon]="faPlus" class= "p-1 "></fa-icon>
+             </span>
+         </button>
+           </div>
+           <div class="col float-right ">
+            <button type="button" class="btn btn-block btn-warning  " style="font: size 15px;font-weight: 500 ;" >Unerol
+              <span>
+                 <fa-icon [icon]="faTimes" class= "p-1 "></fa-icon>
+             </span>
+           </button>
+          
+           </div>
+         </div>     
+       
+                
+       
+        </div>
+        <div class=" card-footer" style="background:#0056b3;" >
+          <h5 style="color: #0056b3;">Mike</h5> 
+        </div>
+</div>
+ </div> 
+
+</div>
